@@ -100,6 +100,9 @@ Entity 사이의 연관관계 매핑을 표현한 것으로 외래키를 설정�
 ## More Explanation
 
 
+[Spring-JPA-Note.md](https://github.com/mwkangit/Spring-JPA/blob/master/Spring-JPA-Note.md)
+
+
 
 
 
