@@ -12,7 +12,7 @@
 
 
 
-![JPA Logic](/media/mwkang/Klevv/Spring 일지/ORM/11.14/JPA Logic.png)
+![JPA Logic](https://user-images.githubusercontent.com/79822924/152362538-3d58d9e8-bbcd-4d2a-b551-cfd7d0bc3739.png)
 
 - #### JPA는 트랜잭션 내에서 이루어지며 동일한 트랜잭션에서 조회한 엔티티는 같음을 보장한다.
 
@@ -106,7 +106,7 @@
 
 
 
-![JPA 구동 방식](/media/mwkang/Klevv/Spring 일지/ORM/11.14/JPA 구동 방식.png)
+![JPA 구동 방식](https://user-images.githubusercontent.com/79822924/152362596-699917c9-d135-4d05-bf49-54a73415f2a1.png)
 
 - #### EntityManagerFactory는 하나만 생성하여 어플리케이션 전체에 공유한다.
 
@@ -128,7 +128,7 @@
 
 
 
-![엔티티 매니저 팩토리와 엔티티 매니저](/media/mwkang/Klevv/Spring 일지/ORM/11.14/엔티티 매니저 팩토리와 엔티티 매니저.png)
+![엔티티 매니저 팩토리와 엔티티 매니저](https://user-images.githubusercontent.com/79822924/152362661-d519ebd7-7e1c-4c75-b9cc-5f7eb2836632.png)
 
 - #### 엔티티 매니저 팩토리는 유일하며 각 사용자마다 엔티티 매니저를 할당한다. 즉, 각 트랜잭션 마다 엔티티 매니저를 할당한다.
 
@@ -138,7 +138,7 @@
 
 
 
-![엔티티의 생명주기](/media/mwkang/Klevv/Spring 일지/ORM/11.14/엔티티의 생명주기.png)
+![엔티티의 생명주기](https://user-images.githubusercontent.com/79822924/152362697-7ff7fa3a-be89-42a1-b229-d6633a5f4e20.png)
 
 - #### 비영속(new/transient)는 영속성 컨텍스트와 전혀 관계가 없는 새로운 상태로 메모리에서 사용하는 변수의 개념으로 생각할 수 있다.
 
@@ -154,7 +154,7 @@
 
 
 
-![1차 캐시 이점](/media/mwkang/Klevv/Spring 일지/ORM/11.14/1차 캐시 이점.png)
+![1차 캐시 이점](https://user-images.githubusercontent.com/79822924/152362723-b7bb135d-e806-4fe3-9281-ed2285b441ad.png)
 
 - #### 한 트랜잭션에서 영속성 컨텍스트에 등록시 1차 캐시에 등록되며 다시 특정 객체를 사용하고자하면 1차 캐시에서 먼저 객체를 탐색하여 사용한다.
 
@@ -176,7 +176,7 @@ System.out.println(a == b); // true
 
 
 
-![쓰기지연](/media/mwkang/Klevv/Spring 일지/ORM/11.14/쓰기지연.png)
+![쓰기지연](https://user-images.githubusercontent.com/79822924/152362750-8e0cdaf5-06b5-4b3b-a3a0-df512b955343.png)
 
 - #### 영속성 컨텍스트는 쓰기 지연 저장소에 SQL 쿼리를  저장한다.
 
@@ -190,7 +190,7 @@ System.out.println(a == b); // true
 
 
 
-![변경 감지](/media/mwkang/Klevv/Spring 일지/ORM/11.14/변경 감지.png)
+![변경 감지](https://user-images.githubusercontent.com/79822924/152362788-bbf820d9-d925-4925-a836-df827d2c8aa1.png)
 
 - #### 스냅샷은 엔티티가 영속성 엔티티에 최초로 들어온 시점의 상태이다.
 
@@ -528,7 +528,7 @@ public class Member {
 
 
 
-![단방향 연관관계](/media/mwkang/Klevv/Spring 일지/ORM/11.14/단방향 연관관계.png)
+![단방향 연관관계](https://user-images.githubusercontent.com/79822924/152362854-e1735aaa-0b6c-4231-8269-a305d2ffcfbb.png)
 
 ```java
 @Entity
@@ -560,9 +560,9 @@ public class Member {
 
 
 
-![양방향 연관관계](/media/mwkang/Klevv/Spring 일지/ORM/11.14/양방향 연관관계.png)
+![양방향 연관관계](https://user-images.githubusercontent.com/79822924/152362880-1f6bdc0c-8754-4b1a-b9e6-712fc6e3fac5.png)
 
-![양방향 연관관계2](/media/mwkang/Klevv/Spring 일지/ORM/11.14/양방향 연관관계2.png)
+![양방향 연관관계2](https://user-images.githubusercontent.com/79822924/152362896-ea3f717c-ff71-4a0e-9c4a-804d9fa94cde.png)
 
 ```java
 @Entity
@@ -661,9 +661,9 @@ public void changeTeam(Team team) {
 
 
 
-![N 대 1 단방향](/media/mwkang/Klevv/Spring 일지/ORM/11.14/N 대 1 단방향.png)
+![N 대 1 단방향](https://user-images.githubusercontent.com/79822924/152362954-a6384d99-01ed-407b-8a93-6b5f531a9e72.png)
 
-![N 대 1 양방향](/media/mwkang/Klevv/Spring 일지/ORM/11.14/N 대 1 양방향.png)
+![N 대 1 양방향](https://user-images.githubusercontent.com/79822924/152362971-bfb9fd7e-050f-474c-9799-3aba6b513198.png)
 
 - #### N : 1 은 가장 많이 사용하는 연관관계 구조이다.
 
@@ -675,9 +675,9 @@ public void changeTeam(Team team) {
 
 
 
-![1 대 N 단방향](/media/mwkang/Klevv/Spring 일지/ORM/11.14/1 대 N 단방향.png)
+![1 대 N 단방향](https://user-images.githubusercontent.com/79822924/152362991-959114cc-10ce-4136-b190-f00667dd0a42.png)
 
-![1 대 N 양방향](/media/mwkang/Klevv/Spring 일지/ORM/11.14/1 대 N 양방향.png)
+![1 대 N 양방향](https://user-images.githubusercontent.com/79822924/152363014-053b63c3-4dfe-4d76-a968-8e2ea8e25190.png)
 
 - #### 1 : N 연관관계에서 외래키가 상대 엔티티에 있어도 1이 연관관계 주인이 된다.
 
@@ -711,9 +711,9 @@ public void changeTeam(Team team) {
 
 
 
-![1 대 1 단방향](/media/mwkang/Klevv/Spring 일지/ORM/11.14/1 대 1 단방향.png)
+![1 대 1 단방향](https://user-images.githubusercontent.com/79822924/152363058-7aa79465-b159-4c48-b731-6deb121a0796.png)
 
-![1 대 1 양방향](/media/mwkang/Klevv/Spring 일지/ORM/11.14/1 대 1 양방향.png)
+![1 대 1 양방향](https://user-images.githubusercontent.com/79822924/152363064-95942a62-7810-47bf-b7c3-27591fcf5454.png)
 
 - #### 1 : 1 관계는 반대도 1 : 1 관계이다.
 
@@ -749,13 +749,13 @@ public void changeTeam(Team team) {
 
 
 
-![N 대 M 연관관계 객체](/media/mwkang/Klevv/Spring 일지/ORM/11.14/N 대 M 연관관계 객체.png)
+![N 대 M 연관관계 객체](https://user-images.githubusercontent.com/79822924/152363117-1d59bb5e-066d-489d-ba03-e97a74d1494a.png)
 
-![N 대 M 연관관계 테이블](/media/mwkang/Klevv/Spring 일지/ORM/11.14/N 대 M 연관관계 테이블.png)
+![N 대 M 연관관계 테이블](https://user-images.githubusercontent.com/79822924/152363143-d2e334d6-74ed-46bc-b01d-7759bd9b6c69.png)
 
-![N 대 M to 1 대  N, N 대 1 객체](/media/mwkang/Klevv/Spring 일지/ORM/11.14/N 대 M to 1 대  N, N 대 1 객체.png)
+![N 대 M to 1 대  N, N 대 1 객체](https://user-images.githubusercontent.com/79822924/152363166-99f2e43b-fbec-4f16-8caa-5c8bd4003a53.png)
 
-![N 대 M to 1 대 N, N 대 1 테이블](/media/mwkang/Klevv/Spring 일지/ORM/11.14/N 대 M to 1 대 N, N 대 1 테이블.png)
+![N 대 M to 1 대 N, N 대 1 테이블](https://user-images.githubusercontent.com/79822924/152363186-840853ea-06e3-4066-97ec-5f454f0c27ec.png)
 
 ```java
 @ManyToMany
@@ -837,9 +837,9 @@ private List<Product> products = new ArrayList<>();
 
 - #### 어노테이션만 수정하여 상속 매핑 전략을 선택할 수 있다. JPA의 좋은 전략이다.
 
-![관계형논리모델](/media/mwkang/Klevv/Spring 일지/ORM/11.27/관계형논리모델.png)
+![관계형논리모델](https://user-images.githubusercontent.com/79822924/152363270-058b6e63-baba-47fc-9308-0df4cfe1de32.png)
 
-![객체상속관계](/media/mwkang/Klevv/Spring 일지/ORM/11.27/객체상속관계.png)
+![객체상속관계](https://user-images.githubusercontent.com/79822924/152363303-7054564f-92ee-49b0-9485-775191861b0f.png)
 
 
 
@@ -847,9 +847,9 @@ private List<Product> products = new ArrayList<>();
 
 
 
-![조인전략객체](/media/mwkang/Klevv/Spring 일지/ORM/11.27/조인전략객체.png)
+![조인전략객체](https://user-images.githubusercontent.com/79822924/152363327-33b42ca6-d552-4576-8cb5-56bb8ec10b50.png)
 
-![조인전략디비](/media/mwkang/Klevv/Spring 일지/ORM/11.27/조인전략디비.png)
+![조인전략디비](https://user-images.githubusercontent.com/79822924/152363349-c6f3b756-4b73-46f5-bdbf-6769871acdf6.png)
 
 - #### 조인 전략은 @Inheritance(strategy = InheritanceType.JOINED)를 사용한다.
 
@@ -889,9 +889,9 @@ private List<Product> products = new ArrayList<>();
 
 
 
-![단일테이블전략객체](/media/mwkang/Klevv/Spring 일지/ORM/11.27/단일테이블전략객체.png)
+![단일테이블전략객체](https://user-images.githubusercontent.com/79822924/152363384-d7f52c4b-8942-4b67-a3cf-e80c494be725.png)
 
-![단일테이블전략디비](/media/mwkang/Klevv/Spring 일지/ORM/11.27/단일테이블전략디비.png)
+![단일테이블전략디비](https://user-images.githubusercontent.com/79822924/152363397-31b5a7af-07b8-40f3-b8b8-de5b655f0168.png)
 
 - #### 단일 테이블 전략은 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)을 사용한다.
 
@@ -923,9 +923,9 @@ private List<Product> products = new ArrayList<>();
 
 
 
-![클래스마다테이블객체](/media/mwkang/Klevv/Spring 일지/ORM/11.27/클래스마다테이블객체.png)
+![클래스마다테이블객체](https://user-images.githubusercontent.com/79822924/152363427-ab52cb8f-c84a-494a-b334-ae7fff7f8a1c.png)
 
-![클래스마다테이블디비](/media/mwkang/Klevv/Spring 일지/ORM/11.27/클래스마다테이블디비.png)
+![클래스마다테이블디비](https://user-images.githubusercontent.com/79822924/152363445-b299af81-da89-4c11-b150-2c2e899621c0.png)
 
 - #### 구현 클래스마다 테이블 전략은 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)을 사용한다.
 
@@ -961,9 +961,9 @@ private List<Product> products = new ArrayList<>();
 
 
 
-![MappedSuperclass1](/media/mwkang/Klevv/Spring 일지/ORM/11.27/MappedSuperclass1.png)
+![MappedSuperclass1](https://user-images.githubusercontent.com/79822924/152363478-f5e2e5b1-b91f-4bf9-ab04-1496ce1589b5.png)
 
-![MappedSuperclass2](/media/mwkang/Klevv/Spring 일지/ORM/11.27/MappedSuperclass2.png)
+![MappedSuperclass2](https://user-images.githubusercontent.com/79822924/152363494-8252c5a8-51be-4dfa-9fd9-85de204df04c.png)
 
 ```java
 @MappedSuperclass
@@ -1038,7 +1038,7 @@ Member member = em.getReference(Member.class, memberId);
 member.getUsername();
 ```
 
-![proxy](/media/mwkang/Klevv/Spring 일지/ORM/11.27/proxy.png)
+![proxy](https://user-images.githubusercontent.com/79822924/152363517-e3a070d7-82c3-47d6-9ef3-6ffa58e7b91e.png)
 
 - #### GetReference()는 데이터베이스 조회를 미루는 가짜(프록시) 엔티티 객체를 조회한다.
 
@@ -1089,7 +1089,7 @@ public class Member {
 }
 ```
 
-![Lazy](/media/mwkang/Klevv/Spring 일지/ORM/11.27/Lazy.png)
+![Lazy](https://user-images.githubusercontent.com/79822924/152363556-fc2466fc-baf0-4256-a0c9-5dfae240cc3d.png)
 
 - #### FetchType.Lazy는 지연로딩으로 엔티티를 프록시로 조회를 한다는 뜻이다. 즉, 위 코드에서 find() 시 Member 엔티티만 조회하며 Team 엔티티는 프록시로 생성해 놓는 것이다.
 
@@ -1114,7 +1114,7 @@ public class Member {
 }
 ```
 
-![EAGER](/media/mwkang/Klevv/Spring 일지/ORM/11.27/EAGER.png)
+![EAGER](https://user-images.githubusercontent.com/79822924/152363581-faecf869-733a-4927-a533-974bff473a01.png)
 
 - #### FetchType.EAGER은 즉시로딩으로 연관된 엔티티를 모두 함께 조회한다는 뜻이다. 즉, 위 코드에서 find() 시 Member 엔티티와 Team 엔티티 모두 쿼리가 전송되어 조회된다.
 
@@ -1140,7 +1140,7 @@ public class Member {
 @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL)
 ```
 
-![cascade](/media/mwkang/Klevv/Spring 일지/ORM/11.27/cascade.png)
+![cascade](https://user-images.githubusercontent.com/79822924/152363599-49c4f0c1-a237-464b-afcc-3ecc00550218.png)
 
 - #### Cascade는 특정 엔티티를 영속 상태로 만들 때 연관된 엔티티도 함께 영속 상태로 만들고 싶을 때 사용한다.
 
@@ -1255,9 +1255,9 @@ parent1.getChildren().remove(0);
 
 
 
-![embedded전](/media/mwkang/Klevv/Spring 일지/ORM/11.27/embedded전.png)
+![embedded전](https://user-images.githubusercontent.com/79822924/152363633-124ae9d4-d174-4e81-9129-d7a7a8a18ca0.png)
 
-![embedded후](/media/mwkang/Klevv/Spring 일지/ORM/11.27/embedded후.png)
+![embedded후](https://user-images.githubusercontent.com/79822924/152363648-48467239-df29-4a33-a636-5f7104271133.png)
 
 - #### 임베디드 타입은 값 타입을 묶어서 엔티티에 전달할 수 있다.
 
@@ -1318,7 +1318,7 @@ parent1.getChildren().remove(0);
 
 
 
-![불변객체 오류](/media/mwkang/Klevv/Spring 일지/ORM/11.27/불변객체 오류.png)
+![불변객체 오류](https://user-images.githubusercontent.com/79822924/152363691-1ffa0ab7-d846-4440-8c5b-21de690dd0c2.png)
 
 - #### 같은 주소를 참조할 때 값을 바꾸면 양쪽 엔티티에 적용되는 부작용이 발생한다.
 
@@ -1380,9 +1380,9 @@ Address d = new Address("서울시");
 
 
 
-![값타입컬렉션1](/media/mwkang/Klevv/Spring 일지/ORM/11.27/값타입컬렉션1.png)
+![값타입컬렉션1](https://user-images.githubusercontent.com/79822924/152363713-26e38d0b-d0ea-4841-85e2-4a739b0ba486.png)
 
-![값타입컬렉션2](/media/mwkang/Klevv/Spring 일지/ORM/11.27/값타입컬렉션2.png)
+![값타입컬렉션2](https://user-images.githubusercontent.com/79822924/152363725-209b76ef-312b-456c-b6cf-e856552180fd.png)
 
 - #### 값 타입 컬렉션은 값 타입을 컬렉션에 담아서 사용하는 것이다.
 
